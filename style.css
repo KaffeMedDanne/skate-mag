@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+.navbar {
+    background-color: beige;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    max-width: 1300px;
+    margin-right: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#navbar_logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #131313 0%, #c62e00 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
