@@ -54,6 +54,17 @@
 
 .navbar_toggle {
     display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #131313;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .navbar-menu {
@@ -119,20 +130,8 @@
         padding-left: 25px;
     }
 
-    .navbar_toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #131313;
-    }
-
-    .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #131313;
+    .navbar_toggle {
+        display: block;
     }
 
     .navbar_item {
