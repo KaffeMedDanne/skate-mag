@@ -104,26 +104,26 @@
     }
 
     .navbar-menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
+        display: flex;
         width: 100%;
-        position: absolute;
-        top: -1000px;
+        position: fixed;
+        left: -1000px;
+        top: 100px;
+        gap: 0;
         opacity: 1;
+        text-align: center;
         transition: all 0.5s ease;
-        height: 50vh;
         z-index: -1;
+        background: beige;
     }
 
     .navbar-menu.active {
-        background: beige;
-        top: 100%;
+        left: 0;
+        top: 100px;
         opacity: 1;
         transition: 0.5s ease;
         z-index: 99;
-        height: 50vh;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     #navbar_logo {
@@ -141,15 +141,13 @@
     .navbar_links {
         text-align: center;
         padding: 2rem;
-        width: 100%;
-        display: table;
     }
 
     #mobile-menu {
         position: absolute;
-        top: 20%;
+        top: 35%;
         right: 5%;
-        transform: translate(5% 20%);
+        transform: translate(5% 35%);
     }
 
     .navbar_toggle .bar {
